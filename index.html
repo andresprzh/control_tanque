@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Generar Remisiones</title>
+
+    <link rel="stylesheet" href="lib\materialize\css\materialize.min.css">
+    <link rel="stylesheet" href="css\style.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <script src="lib\jquery\dist\jquery.min.js"></script>
+    <script src="lib\materialize\js\materialize.js"></script> 
+   
+</head>
+<body>
+    <div class="navbar-fixed ">
+        <nav class="blue darken-2" role="navigation" >
+    
+            <div class="nav-wrapper">
+                <!-- <ul class="sidenav-trigger"  data-target="desplegable">
+                    <li><a href="#"><i class="fas fa-bars"></i></a></li>
+                </ul> -->
+                
+                <a id="logo-container" href="#" class="brand-logo center">
+                    <span>Titulo</span>
+                </a>
+            </div>
+    
+        </nav>
+    </div>
+    <main>
+        <h2 class="center-align">Titulo</h2>
+        <div class="row cuadro_container" >
+            
+            <div id="cuadro1" class="cuadro col s6 m4 l4 ">
+                
+                <h4  class="center-align" >Tanque</h4>
+                <div class="input-field col s12">
+                    <input  id="capacidad" type="number" class="validate" value="20" min="0" >
+                    <label   for="capacidad">Capacidad tanque</label>
+                </div>
+                
+                <div class="tanque col s3"  >
+                    <div class="tanque_cont">
+                    </div>
+                </div>
+
+                <form id="estado" class="tanque_est col s4" >
+                    <p>
+                    <label>
+                        <input name="group1" type="radio" class="red_radio"value="rojo"/>
+                        <span>Rojo</span>
+                    </label>
+                    </p>
+                    <p>
+                    <label>
+                        <input name="group1" type="radio" class="yellow_radio" value="amarrillo"/>
+                        <span>Amarrillo</span>
+                    </label>
+                    </p>
+                    <p>
+                    <label>
+                        <input name="group1" type="radio" class="green_radio"  value="verde" />
+                        <span>Verde</span>
+                    </label>
+                    </p>
+                </form>
+
+                <div class="col s4">
+
+                    <div class="input-field col s12">
+                        <input  id="min" type="number" class="validate" value="2" min="0" max="20">
+                        <label   for="min">limite inferior</label>
+                    </div>
+
+                    <div class="input-field col s12">
+                        <input  id="max" type="number" class="validate" value="18" min="0" max="20">
+                        <label   for="max">limite superior</label>
+                    </div>
+
+                </div>
+                
+            </div>
+            
+            <div  class=" col s6 m4 l4" >
+                
+                <div class="input-field col s6">
+                    <input  id="nivel" type="number" class="validate" value="12" min="0" max="20">
+                    <label   for="nivel">Nivel tanque</label>
+                </div>
+                
+            </div>
+
+            <div id="cuadro2" class="cuadro col s12 m4 l4" style="min-height: 370px;">
+            
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
+<script src="principal.js">
+</script>
